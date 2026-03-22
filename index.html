@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Henrik Bergfjord | Portal</title>
+  <meta name="description" content="Moderne portal med oversikt over strøm, DNS-sjekk, Maimyra, Volvo C40, galleri og SameieNett.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span>Henrik Bergfjord</span>
+      </a>
+      <nav class="nav-links">
+        <a data-nav href="index.html">Hjem</a>
+        <a data-nav href="strom.html">Strøm</a>
+        <a data-nav href="dns-sjekk.html">DNS</a>
+        <a data-nav href="volvo-c40.html">Volvo C40</a>
+        <a data-nav href="maimyra.html">Maimyra</a>
+        <a data-nav href="galleri.html">Galleri</a>
+        <a data-nav href="SameieNett.html">SameieNett</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="card hero-card">
+          <div class="kicker">Digital oversikt · infrastruktur · energi · prosjekt</div>
+          <h1>En mer levende og teknisk frontside.</h1>
+          <p>
+            Her er startsiden bygget opp på nytt med rask navigasjon, NRK-nyheter, besøks­teller,
+            tydelige innganger til strøm, DNS-sjekk, Volvo C40, Maimyra, galleri og SameieNett.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="dns-sjekk.html">Åpne DNS-sjekk</a>
+            <a class="button" href="strom.html">Se strømoversikt</a>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card stat-card">
+            <div class="badge">Besøk</div>
+            <div class="metric" data-visitor-count>…</div>
+            <div class="metric-sub">antall registrerte treff på forsiden</div>
+            <div class="metric-sub" data-visitor-note></div>
+          </div>
+          <div class="card stat-card">
+            <div class="badge">Status</div>
+            <div class="metric">Live</div>
+            <div class="metric-sub">klar for Azure Static Web Apps eller vanlig webhotell</div>
+          </div>
+          <div class="card stat-card">
+            <div class="badge">NRK</div>
+            <div class="metric" style="font-size:1.25rem">Nyhetsfeed</div>
+            <div class="metric-sub" data-news-status>Laster …</div>
+          </div>
+          <div class="card stat-card">
+            <div class="badge">Nytt</div>
+            <div class="metric" style="font-size:1.25rem">DNS + strømgraf</div>
+            <div class="metric-sub">mørk, teknisk og mer moderne stil</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Hurtigvalg</h2>
+            <p>Alt samlet på ett sted.</p>
+          </div>
+        </div>
+        <div class="grid-4">
+          <a class="card tile" href="strom.html">
+            <h3>Strøm</h3>
+            <p class="muted">Oppdatert side med ny graf, tydelig nøkkeltall og teknisk bakgrunn.</p>
+          </a>
+          <a class="card tile" href="dns-sjekk.html">
+            <h3>DNS Domain Check</h3>
+            <p class="muted">Sjekk A, AAAA, MX, TXT, CNAME og NS direkte i nettleseren.</p>
+          </a>
+          <a class="card tile" href="volvo-c40.html">
+            <h3>Volvo C40</h3>
+            <p class="muted">Egen side for bilen med rekkevidde, lading og digitale planer.</p>
+          </a>
+          <a class="card tile" href="maimyra.html">
+            <h3>Maimyra</h3>
+            <p class="muted">Prosjektløft med fokus på bolig, teknologi, fremdrift og prioriteringer.</p>
+          </a>
+          <a class="card tile" href="galleri.html">
+            <h3>Galleri</h3>
+            <p class="muted">Visuell side for prosjekter, stemning og inspirasjon.</p>
+          </a>
+          <a class="card tile" href="SameieNett.html">
+            <h3>SameieNett</h3>
+            <p class="muted">Teaser-side om å gjøre ting riktig fra start, uten å røpe for mye.</p>
+          </a>
+          <a class="card tile" href="index.html#nyheter">
+            <h3>NRK Nyheter</h3>
+            <p class="muted">Forsøk på robust nyhetsvisning med fallback dersom ekstern feed feiler.</p>
+          </a>
+          <a class="card tile" href="strom.html#teknisk">
+            <h3>Teknisk uttrykk</h3>
+            <p class="muted">Mørk profil, linjer, glow og panels som ser mer moderne ut.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="nyheter">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>NRK nyheter</h2>
+            <p>Forsiden prøver å hente NRK-feed. Hvis ekstern proxy ikke svarer brukes fallback-kort.</p>
+          </div>
+        </div>
+        <div class="card news-card">
+          <div class="news-list" data-news-list></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-3">
+        <div class="card feature-card">
+          <div class="badge">Prosjekt</div>
+          <h3>Maimyra</h3>
+          <p class="muted">En mer strukturert underside for boligprosjektet med fokus på kvalitet, fremdrift og digital standard.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="badge">Mobilitet</div>
+          <h3>Volvo C40</h3>
+          <p class="muted">Egen side som passer sammen med resten av portalen og gjør elbil-delen mer helhetlig.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="badge">Infra</div>
+          <h3>SameieNett</h3>
+          <p class="muted">Bygget som en teaser for hvordan infrastruktur kan gjøres mer helhetlig, ryddig og riktig.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="card">
+        Oppdatert portalpakke · <span data-year></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
